@@ -1,3 +1,15 @@
+// Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Layout & components
+@import "../../node_modules/bootstrap/scss/grid";
 
 // Your style
 @import "variables";
