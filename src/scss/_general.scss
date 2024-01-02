@@ -82,6 +82,18 @@ h3{
 
 .section{
     padding: 40px 0;
+
+    a{
+        font-family: $montserrat;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.46em;
+        color: $color-primary;
+        &:focus,
+        &:hover{
+            color: $color-text;
+        }
+    }
 }
 
 .wrapper{
@@ -93,5 +105,22 @@ h3{
         max-width: $wrapper-lg;
         margin:0 auto
     }
+}
+.section-heading{
+    h2{
+        font-size: 25px;
+	    font-weight: 600;
+	    line-height: 1.2192em;
+	    margin: 0 0 32px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+h5 {
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1.38em;
+	margin: 0 0 10px;
 }
 
