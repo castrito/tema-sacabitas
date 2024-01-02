@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Bootstrap and its default variables
 @import "../../node_modules/bootstrap/scss/functions";
 
@@ -12,9 +10,18 @@
 
 // Layout & components
 @import "../../node_modules/bootstrap/scss/grid";
->>>>>>> main
 
 // Your style
 @import "variables";
 @import "mixins";
 @import "general";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Components
+@import "components/grid";
+
+//Sections
+@import "sections/featured-worry";

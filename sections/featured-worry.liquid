@@ -1,7 +1,23 @@
 <section class="section">
     <div class="container">
         <div class="wrapper-lg">
-            <div class="section-heading"><h2>james</h2></div>
+          {% if section.settings.heading != blank %}
+            <div class="section-heading">
+              <h2>{{section.settings.heading}}</h2>
+            </div>
+            {% endif %}
+            <div class="row">
+              {%- for block in section.blocks -%}
+                <div class="col-md-2">
+                {%
+                  render 'benefit-card',
+                  section: section,
+                  block: block,
+                  block_index: forloop.index0,
+                %}
+                </div>
+              {%- endfor -%}
+            </div>
         </div>
     </div>
 </section>
@@ -9,12 +25,44 @@
 
 {% schema %}
 {
-    "name": "Worry",
-    "class": "worry",
+    "name": "Featured Worry",
+    "class": "featured-worry",
+    "settings": [
+        {
+          "id": "heading",
+          "type": "text",
+          "label": "Heading",
+          "default": "Título de sección"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "settings": [
+          {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+          },
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          },
+          {
+            "id": "link",
+            "type": "text",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
 
     "presets": [
     {
-      "name": "Preocupación"
+      "name": "Preocupación",
+      "category": "sections.test"
     }
   ]
 }    

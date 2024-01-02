@@ -84,3 +84,14 @@ h3{
     padding: 40px 0;
 }
 
+.wrapper{
+    &-md{
+        max-width: $wrapper-md;
+        margin: 0 auto;
+    }
+    &-lg{
+        max-width: $wrapper-lg;
+        margin:0 auto
+    }
+}
+

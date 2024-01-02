@@ -1,0 +1,32 @@
+{% liquid
+	assign block_image = block.settings.image
+	assign block_title = block.settings.title | escape
+	assign block_link = block.settings.link | escape
+	assign block_text = block.settings.text | escape
+%}
+
+<div class="benefit-card">
+    {% if block_link != blank %}
+        <a href="{{ block_link }}">
+    {% endif %}
+   
+    {% if block_image != blank %}
+        {%
+          render 'rimg',
+          img: block_image,
+          focal_point: block_image.presentation.focal_point,
+        %}
+        {% else %}
+            {% render 'icon-library', id: block.settings.icon %}
+        {% endif %}
+        {% if block_title != blank %}
+            <h5>{{ block_title }}</h5>
+        {% endif %}
+        {% if block_text != blank %}
+            <p>{{ block_text }}</p>
+        {% endif %}
+
+    {% if block_link != blank %}
+        </a>
+    {% endif %}
+</div>

@@ -1,0 +1,17 @@
+.featured-worry{
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+
+@media (min-width: $wrapper) {
+    .featured-worry{
+        img {
+            width: 190px;
+            height: 190px;
+          }
+    }
+  }
