@@ -1,0 +1,52 @@
+<div class="col-card">
+    <div class="product-card">
+        <picture>
+            <img src="{{ product.featured_image.src | product_img_url: 'medium' }}" alt="{{ product.featured_image.alt | escape }}">
+            <span class="badge badge__primary">30 % OFF</span>
+        </picture>
+
+        <h5>{{ product.title }}</h5>
+        <div class="product-card__info">
+            <p class="product-card__category">Tónico y Bruma</p>
+
+            {%- if product.compare_at_price != blank -%}
+                <span class="product-card__price product-card__price-regular">
+                    {{ product.compare_at_price | money }}
+                </span>
+                <span class="product-card__price product-card__price-sale">
+                    {{ product.price | money }}
+                </span>
+            {%- else -%}
+                <span class="product-card__price product-card__price-sale">
+                    {{ product.price | money }}
+                </span>
+                <span class="product-card__price product-card__price-regular">
+                </span>
+            {%- endif -%}
+           
+            {% if product.available %}
+                <p class="product-card__stock product-card__stock-secondary">En Stock</p>
+            {% else %}
+            <p class="product-card__stock product-card__stock-primary">Stock Bajo</p>
+            {% endif %}
+            
+
+            <div class="product-card__ratings testimonial__star-ratings">
+                {% for i in (1..5) %}
+                    {% render 'icon-library', id: 'icon-star', icon_class: 'testimonial__star-rating' %}
+                {% endfor %}
+                <span>2</span> reseñas
+            </div>
+
+       
+            <div class="product-card__btn">
+                <button class="btn btn-secondary">Compra rápida</button>
+                <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-form" id="addToCartForm">
+                    <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                    <button type="submit" class="btn btn-primary">Añadir al carrito</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

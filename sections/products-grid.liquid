@@ -1,0 +1,95 @@
+{% liquid
+  assign button_class = 'btn-' | append: section.settings.button_style
+%}
+
+<section class="section products-grid" id="{{section.id}}">
+    <div class="container">
+        {% if section.settings.heading != blank %}
+            <div class="section-heading">
+                <h2>{{ section.settings.heading }}</h2>
+            </div>
+        {%- endif -%}
+        <div class="products-grid__grid">
+            {% assign collection_id = section.settings.collection %}
+            {% assign collection = collections[collection_id] %}
+            {% assign image = section.settings.image %}
+
+            {% if image != blank %}
+                <div class="products-grid__img">
+                    {%
+                        render 'rimg',
+                        img: image,
+                    %}
+                </div>
+            {% endif %}
+
+            {% if collection_id != blank %}
+                {% if collection %}
+                    {% for product in collection.products limit: 8 %}
+                        {% render 'product-card', product: product %}
+                    {% endfor %}
+                {% endif %}
+            {% else %}
+                {% assign sorted_products = collections.all.products | sort: 'created_at' | reverse %}
+                {% for product in sorted_products limit: 8 %}
+                    {% render 'product-card', product: product %}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    <script>
+        $(document).ready(function($) {
+            if ($(window).width() <= 992) {
+                $('#{{section.id}} .products-grid__grid').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    arrows: false,
+                    dots: false,
+                    responsive: [
+                    {
+                        breakpoint: 1415,
+                        settings: {
+                            variableWidth: true
+                        }
+                    }
+                    ]
+                });
+            }
+        });
+    </script>
+</section>
+
+{% schema %}
+    {
+      "name": "Products grid",
+      "class": "products-grid--section",
+      "settings": [
+        {
+            "id": "heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Heading"
+        },
+        {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Image"
+        },
+        {
+          "id": "collection",
+          "type": "collection",
+          "label": "Collection"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Products grid"
+        }
+      ],
+      "disabled_on": {
+        "groups": ["*"]
+      }
+    }
+    
+{% endschema %}
