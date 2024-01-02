@@ -10,10 +10,73 @@
             "title": "Acné",
             "link": "#"
           }
+        },
+        "0d9f8db1-2b49-49a8-94de-816e79243c16": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
+            "title": "Acné",
+            "link": "#"
+          }
+        },
+        "aff5d99d-baa5-4d45-a146-b95b87aec4bc": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
+            "title": "Acné",
+            "link": "#"
+          }
+        },
+        "987ec5ff-91bd-41b4-91e8-4ffd53ce007a": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
+            "title": "Acné",
+            "link": "#"
+          }
+        },
+        "9325cf65-6f3e-4009-9fef-b2c980d3b1c7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
+            "title": "Acné",
+            "link": "#"
+          }
+        },
+        "0b5d631b-52e7-4ce0-a094-09677c4b519f": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
+            "title": "Acné",
+            "link": "#"
+          }
+        },
+        "39d0edc2-67e0-4151-92d6-11a2e9820d2b": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
+            "title": "Acné",
+            "link": "#"
+          }
+        },
+        "0e5999ec-a2de-4a09-8d6a-ff8630171e21": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
+            "title": "Acné",
+            "link": "#"
+          }
         }
       },
       "block_order": [
-        "4baeefb1-8392-46e5-8301-02b934c4c375"
+        "4baeefb1-8392-46e5-8301-02b934c4c375",
+        "0d9f8db1-2b49-49a8-94de-816e79243c16",
+        "aff5d99d-baa5-4d45-a146-b95b87aec4bc",
+        "987ec5ff-91bd-41b4-91e8-4ffd53ce007a",
+        "9325cf65-6f3e-4009-9fef-b2c980d3b1c7",
+        "0b5d631b-52e7-4ce0-a094-09677c4b519f",
+        "39d0edc2-67e0-4151-92d6-11a2e9820d2b",
+        "0e5999ec-a2de-4a09-8d6a-ff8630171e21"
       ],
       "settings": {
         "heading": "Título de sección"
