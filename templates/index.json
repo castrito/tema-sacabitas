@@ -3,10 +3,11 @@
     "948e04f2-c850-4fd2-b869-f509b048da57": {
       "type": "media-content",
       "settings": {
-        "heading": "",
-        "content": "",
-        "button_text": "",
-        "button_link": "",
+        "image": "shopify:\/\/shop_images\/store-yeppo.svg",
+        "heading": "VISITAR LA TIENDA DE YEPPO",
+        "content": "Yeppo tiene una tienda de cosméticos coreanos y cafetería en Patronado donde se ofrece gratuitamente asesorías de piel con tecnólogia coreana. Haz click en el botón de abajo para conocer la ubicación y horario de la atención de la tienda",
+        "button_text": "Visitar Tiendas",
+        "button_link": "#",
         "button_style": "primary"
       }
     },
