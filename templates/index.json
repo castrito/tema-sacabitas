@@ -70,6 +70,13 @@
         "padding_bottom": 36
       }
     },
+    "content_background": {
+      "type": "content-background",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/reference-guide.svg",
+        "button_style": "primary"
+      }
+    },
     "featured_worry": {
       "type": "featured-worry",
       "blocks": {
@@ -155,9 +162,6 @@
     "media_content": {
       "type": "media-content"
     },
-    "content_background": {
-      "type": "content-background"
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -228,9 +232,8 @@
   },
   "order": [
     "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa",
-    "media_content",
-    "featured_worry",
     "content_background",
+    "featured_worry",
     "image_banner",
     "featured_collection"
   ]
