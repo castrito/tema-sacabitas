@@ -1,5 +1,24 @@
 {
   "sections": {
+    "948e04f2-c850-4fd2-b869-f509b048da57": {
+      "type": "media-content",
+      "settings": {
+        "heading": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary"
+      }
+    },
+    "content_background": {
+      "type": "content-background",
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/reference-guide.svg",
+        "button_style": "primary",
+        "heading": "",
+        "content": ""
+      }
+    },
     "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa": {
       "type": "featured-product",
       "blocks": {
@@ -70,13 +89,6 @@
         "padding_bottom": 36
       }
     },
-    "content_background": {
-      "type": "content-background",
-      "settings": {
-        "bg_image": "shopify:\/\/shop_images\/reference-guide.svg",
-        "button_style": "primary"
-      }
-    },
     "featured_worry": {
       "type": "featured-worry",
       "blocks": {
@@ -127,22 +139,6 @@
             "title": "Acné",
             "link": "#"
           }
-        },
-        "39d0edc2-67e0-4151-92d6-11a2e9820d2b": {
-          "type": "card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
-            "title": "Acné",
-            "link": "#"
-          }
-        },
-        "0e5999ec-a2de-4a09-8d6a-ff8630171e21": {
-          "type": "card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/postbundle-2-22.jpg",
-            "title": "Acné",
-            "link": "#"
-          }
         }
       },
       "block_order": [
@@ -151,16 +147,11 @@
         "aff5d99d-baa5-4d45-a146-b95b87aec4bc",
         "987ec5ff-91bd-41b4-91e8-4ffd53ce007a",
         "9325cf65-6f3e-4009-9fef-b2c980d3b1c7",
-        "0b5d631b-52e7-4ce0-a094-09677c4b519f",
-        "39d0edc2-67e0-4151-92d6-11a2e9820d2b",
-        "0e5999ec-a2de-4a09-8d6a-ff8630171e21"
+        "0b5d631b-52e7-4ce0-a094-09677c4b519f"
       ],
       "settings": {
         "heading": "Título de sección"
       }
-    },
-    "media_content": {
-      "type": "media-content"
     },
     "image_banner": {
       "type": "image-banner",
@@ -231,8 +222,9 @@
     }
   },
   "order": [
-    "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa",
+    "948e04f2-c850-4fd2-b869-f509b048da57",
     "content_background",
+    "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa",
     "featured_worry",
     "image_banner",
     "featured_collection"
