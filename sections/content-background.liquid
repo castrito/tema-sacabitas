@@ -1,11 +1,24 @@
 {% liquid
+    assign heading = section.settings.heading
+    assign content = section.settings.content
+    assign bg_image = section.settings.bg_image
     assign button_class = 'btn-' | append: section.settings.button_style
 %}
 <div class="container">
     <div class="content-bg-inner">
         <div class="wrapper-md">
             <div class="content-background" style="background-image: url('{{ bg_image | img_url: 'master' }}')">
-
+                <div class="content-background__body">    
+                    {% if heading != blank %}                
+                        <h2>{{heading}}</h2>
+                    {% endif %}
+                    {% if content != blank %}                
+                        <p>{{content}}</p>
+                    {% endif %}
+                    <div class="media-background__cta">
+                      <a class="btn btn-primary" href="#" title="Leer">Leer</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -37,6 +50,16 @@
             }
           ],
           "default": "primary"
+        },
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+            "type": "textarea",
+            "id": "content",
+            "label": "Content"
         }
       ],
 

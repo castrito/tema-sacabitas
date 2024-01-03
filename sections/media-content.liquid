@@ -1,0 +1,91 @@
+{% liquid
+  assign heading = section.settings.heading | escape
+  assign content = section.settings.content | escape
+  assign button_text = section.settings.button_text | escape
+  assign button_link = section.settings.button_link | escape
+  assign image = section.settings.image
+  assign button_class = 'btn-' | append: section.settings.button_style
+%}
+
+<div class="container">
+    <div class="media-content-inner">
+
+        <div class="media-content">
+            <picture>
+              <img src="{{ image | img_url: 'master' }}" alt="{{ image.alt}}">
+            </picture>
+            <div class="media-content__body">
+              {%- if heading != blank -%}
+                <h2>{{ heading }}</h2>
+              {%- endif -%}
+
+              {%- if content != blank -%}
+                <p>{{ content }}</p>
+              {%- endif -%}
+              {%- if button_text != blank -%}
+                <div class="media-content__cta">
+                  <a class="btn {{button_class}}" href="{{button_link}}" title="{{button_text}}">{{button_text}}</a>
+                </div>
+              {%- endif -%}
+               
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Media Content",
+      "class": "section media-content-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "text",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "id": "button_style",
+          "type": "select",
+          "label": "Button style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Media Content"
+        }
+      ]
+    }
+    
+{% endschema %}

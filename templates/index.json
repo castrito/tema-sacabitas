@@ -152,6 +152,9 @@
         "heading": "Título de sección"
       }
     },
+    "media_content": {
+      "type": "media-content"
+    },
     "content_background": {
       "type": "content-background"
     },
@@ -225,6 +228,7 @@
   },
   "order": [
     "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa",
+    "media_content",
     "featured_worry",
     "content_background",
     "image_banner",

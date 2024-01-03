@@ -1,3 +1,13 @@
+.content-background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 65px;
+    padding-bottom: 70px;
+    &__body{
+        max-width: 511px;
+    }
+}
 .content-with-background{
 
     .content-bg-inner{
