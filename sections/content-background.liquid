@@ -1,0 +1,49 @@
+{% liquid
+    assign button_class = 'btn-' | append: section.settings.button_style
+%}
+<div class="container">
+    <div class="content-bg-inner">
+        <div class="wrapper-md">
+            <div class="content-background" style="background-image: url('{{ bg_image | img_url: 'master' }}')">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+      "name": "Content Background",
+      "class": "section content-with-background",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "bg_image",
+          "label": "Background Image"
+        },
+        {
+          "id": "button_style",
+          "type": "select",
+          "label": "Button style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        }
+      ],
+
+      "presets": [
+        {
+          "name": "Content Background"
+        }
+      ]
+    }
+{% endschema %}

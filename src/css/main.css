@@ -1317,3 +1317,8 @@ h5 {
     padding-bottom: 8px;
   }
 }
+
+.content-with-background .content-bg-inner {
+  background: #fdf6fa;
+  padding: 73px 0;
+}

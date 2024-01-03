@@ -152,6 +152,9 @@
         "heading": "Título de sección"
       }
     },
+    "content_background": {
+      "type": "content-background"
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -223,6 +226,7 @@
   "order": [
     "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa",
     "featured_worry",
+    "content_background",
     "image_banner",
     "featured_collection"
   ]
