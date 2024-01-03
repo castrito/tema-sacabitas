@@ -1,45 +1,45 @@
 {
   "sections": {
-    "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa": {
+    "f0f84271-51b8-420a-878e-99e356d5d09f": {
       "type": "featured-product",
       "blocks": {
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-text-1": {
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-text-1": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
           }
         },
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-title-1": {
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-title-1": {
           "type": "title",
           "settings": {
             "heading_size": "h1"
           }
         },
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-price-1": {
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-price-1": {
           "type": "price",
           "settings": {
           }
         },
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-variant_picker-1": {
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-variant_picker-1": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
           }
         },
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-quantity_selector-1": {
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-quantity_selector-1": {
           "type": "quantity_selector",
           "settings": {
           }
         },
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-buy_buttons-1": {
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-share-1": {
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-share-1": {
           "type": "share",
           "settings": {
             "share_label": "Share"
@@ -47,13 +47,13 @@
         }
       },
       "block_order": [
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-text-1",
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-title-1",
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-price-1",
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-variant_picker-1",
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-quantity_selector-1",
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-buy_buttons-1",
-        "template--17140870643942__0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa-share-1"
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-text-1",
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-title-1",
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-price-1",
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-variant_picker-1",
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-quantity_selector-1",
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-buy_buttons-1",
+        "template--17140870643942__f0f84271-51b8-420a-878e-99e356d5d09f-share-1"
       ],
       "settings": {
         "product": "10598",
@@ -223,7 +223,7 @@
     }
   },
   "order": [
-    "0244a76b-3bbb-43bb-91d7-a6e6ec07d8aa",
+    "f0f84271-51b8-420a-878e-99e356d5d09f",
     "948e04f2-c850-4fd2-b869-f509b048da57",
     "content_background",
     "featured_worry",
